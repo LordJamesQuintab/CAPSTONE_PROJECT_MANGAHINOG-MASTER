@@ -1,9 +1,10 @@
 
 
 <div class="flex justify-center items-center mb-48 mt-32 font-sans">
-    <video autoplay muted loop class="bg-video">
-        <source src="{{ asset('bg-video/bg-video.mp4') }}" type="video/mp4">
-    </video>
+    <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover z-0">
+    <source src="{{ asset('bg-video/bg-video.mp4') }}" type="video/mp4">
+</video>
+ {{-- konting bago  --}}
     <div class="blur-bg">
       <div class="login-page login-flex flex flex-col items-center justify-center">
         <img src="{{ asset('logo.svg') }}" alt="Icon" width="550"/>

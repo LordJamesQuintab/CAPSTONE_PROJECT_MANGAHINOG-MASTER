@@ -1,10 +1,12 @@
 @vite(['resources/css/app.css','resources/js/app.js'])
 <x-navbar>
+
+    {{-- may konting binago  --}}
 <form method="POST" action="/threads" enctype="multipart/form-data"> <!-- Add enctype here -->
     @csrf
     <div class="flex flex-col mt-10 mx-20 border rounded-lg p-5 gap-4 mb-4 font-sans">
         <div>
-            <label for="title" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Title</label>
+            <label for="title" class="block mb-2 text-sm font-medium text-black dark:text-white">Title</label>
             <input 
              type="text"
              name="title" id="title" 
